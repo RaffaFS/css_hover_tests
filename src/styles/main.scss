@@ -1,0 +1,44 @@
+@use 'modules/reset';
+@use 'modules/colors';
+@use 'modules/font';
+
+body{
+    background-color: colors.$color5;
+    color: colors.$w0;
+
+    .container{
+        max-width: 1280px;
+        margin: 0 auto;
+        text-align: justify;
+
+        .text-box{
+            margin-top: 64px;
+            background-color: colors.$color1-8;
+            border: 8px solid colors.$color1;
+            border-radius: 16px;
+            padding: 16px;
+
+            .text{
+                font-size: font.$size3;
+            }
+        }
+
+        .links-box{
+            margin-top: 128px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .link{
+                text-decoration: none;
+                padding: 8px 16px;
+                border: solid 8px colors.$color1;
+                border-radius: 16px;
+                background-color: colors.$color1-8;
+                color: colors.$w0;
+                font-family: font.$family3;
+                font-size: font.$size2;
+            }
+        }
+    }
+}
