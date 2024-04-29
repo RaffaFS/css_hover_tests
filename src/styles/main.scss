@@ -38,6 +38,13 @@ body{
                 color: colors.$w0;
                 font-family: font.$family3;
                 font-size: font.$size2;
+                box-shadow: 0 0 0 0 #111;
+                transition: all .4s;
+
+                &:hover{
+                    translate: 0 -10 0;
+                    box-shadow: 0 10 10 0 #333;
+                }
             }
         }
     }
