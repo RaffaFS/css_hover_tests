@@ -5,14 +5,23 @@
 body{
     background-color: colors.$color5;
     color: colors.$w0;
+    width: 100vw;
 
     .container{
-        max-width: 1280px;
+        width: 80%;
         margin: 0 auto;
-        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        justify-content: center;
+        gap: 8vh;
+
+        @media(max-width:768px){
+            width: 90%;
+        }
 
         .text-box{
-            margin-top: 64px;
+            text-align: justify;
             background-color: colors.$color1-8;
             border: 8px solid colors.$color1;
             border-radius: 16px;
@@ -20,11 +29,14 @@ body{
 
             .text{
                 font-size: font.$size3;
+
+                @media(max-width:768px){
+                    font-size: font.$size4;
+                }
             }
         }
 
         .links-box{
-            margin-top: 128px;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -40,6 +52,10 @@ body{
                 font-size: font.$size2;
                 box-shadow: 0 0 0 0 #111;
                 transition: all .4s;
+
+                @media(max-width:768px){
+                    font-size: font.$size3;
+                }
 
                 &:hover{
                     translate: 0 -10 0;
